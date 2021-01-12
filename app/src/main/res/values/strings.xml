@@ -5,4 +5,6 @@
     <string name="login">Login</string>
     <string name="not_registered">Not Registered?</string>
     <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
 </resources>

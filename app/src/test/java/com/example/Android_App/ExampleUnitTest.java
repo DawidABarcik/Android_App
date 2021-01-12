@@ -1,4 +1,4 @@
-package com.example.login_register;
+package com.example.Android_App;
 
 import org.junit.Test;
 
