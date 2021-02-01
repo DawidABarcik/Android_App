@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+<!--            android:icon=""-->
+        <item
+            android:id="@+id/nav_jobsearch"
+            android:title="Job Search" />
+<!--            android:icon=""-->
+        <item
+            android:id="@+id/nav_savedjobs"
+            android:title="Saved Jobs" />
+<!--            android:icon=""-->
+        <item
+            android:id="@+id/nav_joboffers"
+            android:title="Job Offers" />
+        <!--            android:icon=""-->
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Profile">
+            <menu>
+                <item
+                    android:id="@+id/nav_myinfo"
+                    android:title="My Information" />
+<!--                    android:icon=""-->
+                <item
+                    android:id="@+id/nav_jobhistory"
+                    android:title="Job History" />
+<!--                    android:icon=""-->
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout" />
+<!--                    android:icon=""-->
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:title="Rate" />
+        </menu>
+    </item>
+
+</menu>
