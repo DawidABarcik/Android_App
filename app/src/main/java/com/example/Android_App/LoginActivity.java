@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class    LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     EditText mTextUsername;
     EditText mTextPassword;
     Button mButtonLogin;
@@ -20,7 +20,7 @@ public class    LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.fragment_login);
 
         db = new DatabaseHelper(this);
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
@@ -43,8 +43,9 @@ public class    LoginActivity extends AppCompatActivity {
                 Boolean res = db.checkUser(user, password);
                 if (res == true){
                     Toast.makeText(LoginActivity.this,"Successfully Logged In",Toast.LENGTH_SHORT).show();
-                    Intent homePage = new Intent(LoginActivity.this,HomePageActivity.class);
+                    Intent homePage = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(homePage);
+                    finish();
                 }
                 else{
                     Toast.makeText(LoginActivity.this,"Login Error",Toast.LENGTH_SHORT).show();
